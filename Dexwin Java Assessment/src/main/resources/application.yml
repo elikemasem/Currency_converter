@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+
+dexwin:
+  properties:
+    currency: "EUR"
+
+exchangerate:
+  properties:
+    apiKey: "040e193f1836576e0bc702b2740f8674"
+    url: "http://api.exchangerate.host/convert"
