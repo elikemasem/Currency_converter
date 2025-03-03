@@ -47,7 +47,7 @@ public class CurrencyController {
                 return ResponseEntity.badRequest().body("Amount must be greater than zero.");
             }
 
-            double convertedAmount = currencyService.convert(source, target, amount);
+            double convertedAmount = currencyService.convert(source.toUpperCase(), target.toUpperCase(), amount);
             return ResponseEntity.ok(convertedAmount);
 
         } catch (IllegalArgumentException e) {
